@@ -12,3 +12,7 @@ class CreateEvent(BaseModel):
 class EventResponse(CreateEvent):
     id: int
     flyer: Optional[str]
+
+
+
+model_config = {"from_attributes": True}

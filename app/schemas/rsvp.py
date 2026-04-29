@@ -6,6 +6,8 @@ class Rsvp(BaseModel):
     event_id: int
     name: str
     email: str
+    
+    model_config = {"from_attributes": True}    
 
 
 class RsvpCreate(BaseModel):
